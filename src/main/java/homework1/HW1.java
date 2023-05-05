@@ -7,8 +7,8 @@ public class HW1 {
     public static void main(String[] args) {
  //       hw1_task1();
  //       hw1_task2();
- //       hw1_task3();
-        hw1_task4();
+        hw1_task3();
+ //       hw1_task4();
 
     }
     /*4. В консоли запросить имя пользователя. В зависимости от текущего времени, вывести приветствие вида:
@@ -25,7 +25,7 @@ public class HW1 {
         if (hour >= 5 & hour < 12) System.out.printf("Доброе утро ,  %s !%n", name);
         if (hour >= 12 & hour < 18) System.out.printf("Добрый день ,  %s !%n", name);
         if (hour >= 18 & hour < 23) System.out.printf("Добрый вечер ,  %s !%n", name);
-        if (hour >= 23 & hour < 5) System.out.printf("Доброй ночи ,  %s !%n", name);
+        if (hour == 23 || hour <= 0 & hour < 5) System.out.printf("Доброй ночи ,  %s !%n", name);
     }
 
     /*3. Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
