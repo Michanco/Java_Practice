@@ -16,6 +16,7 @@ public class HW4_task1 {
             Scanner scanner = new Scanner(System.in);
             String inputValue = scanner.nextLine();
             if (inputValue.equals("exit")) break;
+            else if (inputValue.equals("")) System.out.println("Давайте без пустых строк");
             else if (inputValue.equals("print")) reversePrintLinkedList(dataBase);
             else if (inputValue.equals("revert")) dataBase.remove(dataBase.get(dataBase.size() - 1));
             else dataBase.add(inputValue);
@@ -23,7 +24,8 @@ public class HW4_task1 {
     }
     private static void reversePrintLinkedList(LinkedList<String> linkedList) {
         for (int i = linkedList.size() - 1; i >= 0 ; i--) {
-            System.out.println(linkedList.get(i));
+            System.out.print(linkedList.get(i) + " ");
         }
+        System.out.println();
     }
 }
