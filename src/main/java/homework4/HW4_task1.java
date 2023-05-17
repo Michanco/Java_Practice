@@ -24,7 +24,7 @@ public class HW4_task1 {
     }
     private static void reversePrintLinkedList(LinkedList<String> linkedList) {
         for (int i = linkedList.size() - 1; i >= 0 ; i--) {
-            System.out.print(linkedList.get(i) + " ");
+            System.out.print("/"  + linkedList.get(i) + "/" );
         }
         System.out.println();
     }
