@@ -133,8 +133,11 @@ public class Main {
             }
         }
         System.out.println(builderOfFilters);
-        for ( Notebook el: resultSet) {
-            System.out.println(el);
+        if (resultSet.size() == 0) System.out.println("По вашему запросу ничего не найдено ");
+        else {
+            for ( Notebook el: resultSet) {
+                System.out.println(el);
+        }
         }
     }
 }
